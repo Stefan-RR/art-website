@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background-color: #EFEBE0;
+    font-family: 'Lato', sans-serif;
+}
+.nav-div {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    max-width: auto;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #EFEBE0;
+    top: 0;
+}
+.front-page {
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+}
+.top-link {
+    color: rgb(138, 138, 138);
+    text-decoration: none;
+}
+.list-item {
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+    color: lightgrey;
+    padding-left: 25px;
+}
+.hero {
+    height: auto;
+    padding-top: 7.5%;
+
+}
+.hero-banner {
+    height: 55vh;
+    width: 93%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
