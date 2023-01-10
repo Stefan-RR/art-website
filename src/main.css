@@ -30,8 +30,13 @@ body {
     color: rgb(138, 138, 138);
 }
 .top-link {
-    color: rgb(138, 138, 138);
+    color: rgb(128, 127, 127);
     text-decoration: none;
+    font-weight: bold;
+}
+.top-link:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.25s;
 }
 .list-item {
     display: inline;
@@ -64,6 +69,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 10px 20px 10px;
+}
+.link:hover {
+    background-color: #ffffff;
+    transition: 0.3s;
 }
 .hero {
     height: auto;
@@ -201,5 +210,5 @@ input {
     width: 100px;
     align-self: center;
     text-align: center;
-    padding: 0;
+    padding: 10px 20px 10px;
 }
