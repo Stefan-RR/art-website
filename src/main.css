@@ -89,6 +89,11 @@ body {
     background-color: #ffffff;
     transition: 0.3s;
 }
+.link-hide {
+    visibility: hidden;
+    height: 0;
+    visibility: 0;
+}
 .hero {
     height: auto;
     padding-top: 7.5%;
@@ -146,6 +151,11 @@ h2 {
     font-size: 50px;
     padding-bottom: 2.5%;
 }
+.hidden-pic {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+}
 .picture-row {
     width: 80%;
     margin-right: auto;
@@ -153,6 +163,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2.5%;
+    visibility: visible;
 }
 .outer-picture {
     height: 400px;
@@ -162,6 +173,12 @@ h2 {
     height: 400px;
     width: 400px;
     border-radius: 400px;
+}
+.reveal {
+    visibility: visible;
+    height: 400px;
+    width: 400px;
+    margin: 0;
 }
 .comissions {
     padding-top: 2.5%;
