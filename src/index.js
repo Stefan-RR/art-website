@@ -6,3 +6,11 @@ function reveal() {
     }
     document.getElementById('link').classList.add('link-hide');
 }
+function dropDown() {
+    document.getElementById('dropDown').classList.toggle('show');
+}
+window.onclick = function(ev){
+    if (ev.target.className !== 'button-box'){
+        document.getElementById('dropDown').classList.remove('show');
+    }
+}
