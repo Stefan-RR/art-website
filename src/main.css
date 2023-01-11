@@ -90,6 +90,7 @@ body {
 .link:hover {
     background-color: #ffffff;
     transition: 0.3s;
+    cursor: pointer;
 }
 .link-hide {
     visibility: hidden;
@@ -308,7 +309,7 @@ input {
         padding: 15px;
         opacity: 100%;
       }
-      .nav-hidden:hover {
+    .nav-hidden:hover {
         background-color: #ffffff;
     }
     .show {
@@ -360,4 +361,12 @@ input {
     .comission-information {
         width: 80%;
         list-style: none;
+    }
+    .contact-description {
+        width: 80%;
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
