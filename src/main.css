@@ -204,12 +204,41 @@ h2 {
     width: 400px;
     margin: 0;
 }
-.comissions {
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%; 
+    z-index: 100;
+    display: none;
+}
+.popup {
+    display: block;
+}
+.popup-image span {
+    position: absolute;
+    top: 0; 
+    right: 10px;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+.popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 750px;
+    object-fit: cover;
+}
+.commissions {
     padding-top: 2.5%;
     padding-bottom: 5%;
     text-align: center;
 }
-.comission-information {
+.commission-information {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
@@ -218,7 +247,7 @@ h2 {
     margin-right: auto;
     list-style: none;
 }
-.comission-information li {
+.commission-information li {
     margin-bottom: 30px;
 
 }
@@ -358,7 +387,7 @@ input {
         border-radius: 0 ;
         padding-bottom: 15px;
     }
-    .comission-information {
+    .commission-information {
         width: 80%;
         list-style: none;
     }
