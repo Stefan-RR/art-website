@@ -238,7 +238,7 @@ h2 {
     position: absolute;
     top: 2%;
     right: 30%;
-    width: 40%;
+    height: 90%;
 }
 .commissions {
     padding-top: 2.5%;
@@ -393,6 +393,14 @@ input {
         aspect-ratio: 1/1;
         border-radius: 0 ;
         padding-bottom: 15px;
+    }
+    .popup-image img {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 90%;
+        height: auto;    
+        aspect-ratio: 1/1;
     }
     .commission-information {
         width: 80%;
