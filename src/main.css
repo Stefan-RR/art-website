@@ -253,6 +253,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     list-style: none;
+    line-height: 1.6;
 }
 .commission-information li {
     margin-bottom: 30px;
@@ -264,11 +265,13 @@ h2 {
     text-align: center;
 }
 .contact-description {
-    width: 30%;
+    max-width: 600px;
     font-weight: bold;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+    line-height: 1.6;
 }
 .contact-form {
     max-width: 600px; 
@@ -279,6 +282,12 @@ h2 {
     padding: 40px;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
+}
+.insta {
+    text-decoration: none;
+}
+.insta:hover {
+    color:rgb(108, 146, 180)
 }
 .form {
     background-color: #f5f2eb;
