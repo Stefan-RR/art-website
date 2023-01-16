@@ -15,7 +15,7 @@ body {
     padding-left: 3.5%;
     padding-right: 3.5%;
     max-width: auto;
-    height: 100px;
+    height: 75px;
     right: 0;
     left: 0;
     z-index: 5;
@@ -38,9 +38,8 @@ body {
     font-weight: bold;
 }
 .top-link:hover {
-    color: rgb(128, 127, 127);
+    color:cornflowerblue;
     transition: 0.25s;
-    filter: drop-shadow(0 0 .5px rgb(135, 210, 253));
 }
 .list-item {
     display: inline;
@@ -288,9 +287,13 @@ h2 {
 }
 .insta {
     text-decoration: none;
+    color:cornflowerblue
 }
 .insta:hover {
-    color:rgb(108, 146, 180)
+    color:rgb(108, 146, 180);
+}
+.insta:visited {
+    color:cornflowerblue
 }
 .form {
     background-color: #f5f2eb;
