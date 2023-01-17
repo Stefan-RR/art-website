@@ -300,14 +300,26 @@ h5 {
     margin-left: auto;
     margin-right: auto;
 }
+figure {
+    width: 33%;
+}
 .reference-list {
     width: 50%;
 }
 .good-pic {
-    width: 50%;
+    width: 100%;
+    right: 0;
+    display: block;
+    margin: auto;
+}
+.bad-pic {
+    width: 48%;
+    margin: auto;
 }
 figcaption {
     font-size: 0.75em;
+    width: 100%;
+    margin: auto;
 }
 .contact {
     padding-top: 2.5%;
