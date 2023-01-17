@@ -266,8 +266,16 @@ h2 {
     padding-bottom: 20%;
     text-align: center;
 }
+.contact-contents {
+    display: flex;
+    flex: row;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
 .contact-description {
-    max-width: 600px;
+    max-width: 650px;
     font-weight: bold;
     font-size: 20px;
     margin-left: auto;
@@ -276,7 +284,7 @@ h2 {
     line-height: 1.6;
 }
 .contact-form {
-    max-width: 600px; 
+    max-width: 650px; 
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -294,6 +302,13 @@ h2 {
 }
 .insta:visited {
     color:cornflowerblue
+}
+.contact-pic-div {
+    height: auto;
+    width: 303.3px;
+}
+.contact-picture {
+    height: 250px;
 }
 .form {
     background-color: #f5f2eb;
@@ -428,5 +443,8 @@ input {
         font-size: 20px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .contact-picture {
+        height: 200px;
     }
 }
