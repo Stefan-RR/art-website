@@ -15,7 +15,7 @@ body {
     padding-left: 3.5%;
     padding-right: 3.5%;
     max-width: auto;
-    height: 100px;
+    height: 75px;
     right: 0;
     left: 0;
     z-index: 5;
@@ -38,9 +38,8 @@ body {
     font-weight: bold;
 }
 .top-link:hover {
-    color: rgb(128, 127, 127);
+    color:cornflowerblue;
     transition: 0.25s;
-    filter: drop-shadow(0 0 .5px rgb(135, 210, 253));
 }
 .list-item {
     display: inline;
@@ -160,16 +159,19 @@ body {
     transition: .3s;
 }
 .gallery {
-    padding-top: 2.5%;
+    padding-top: 3%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: 'center';
     text-align: center;
 }
+.gallery-header {
+    margin-bottom: 50px;
+}
 h2 {
     font-size: 50px;
-    padding-bottom: 2.5%;
+    margin-bottom: 30px;
 }
 .hidden-pic {
     visibility: hidden;
@@ -238,7 +240,7 @@ h2 {
     position: absolute;
     top: 2%;
     right: 30%;
-    width: 40%;
+    height: 90%;
 }
 .commissions {
     padding-top: 2.5%;
@@ -246,13 +248,14 @@ h2 {
     text-align: center;
 }
 .commission-information {
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 30px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     list-style: none;
+    line-height: 1.6;
 }
 .commission-information li {
     margin-bottom: 30px;
@@ -264,11 +267,13 @@ h2 {
     text-align: center;
 }
 .contact-description {
-    width: 30%;
+    max-width: 600px;
     font-weight: bold;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+    line-height: 1.6;
 }
 .contact-form {
     max-width: 600px; 
@@ -279,6 +284,16 @@ h2 {
     padding: 40px;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
+}
+.insta {
+    text-decoration: none;
+    color:cornflowerblue
+}
+.insta:hover {
+    color:rgb(108, 146, 180);
+}
+.insta:visited {
+    color:cornflowerblue
 }
 .form {
     background-color: #f5f2eb;
@@ -294,7 +309,8 @@ input {
     height: 40px;
 }
 .message {
-    height: 80px;
+    height: 200px;
+    resize: none;
 }
 .submit {
     background-color: rgb(0, 0, 0);
@@ -393,6 +409,14 @@ input {
         aspect-ratio: 1/1;
         border-radius: 0 ;
         padding-bottom: 15px;
+    }
+    .popup-image img {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 90%;
+        height: auto;    
+        aspect-ratio: 1/1;
     }
     .commission-information {
         width: 80%;
