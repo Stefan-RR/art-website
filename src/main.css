@@ -242,6 +242,19 @@ h2 {
     right: 30%;
     height: 90%;
 }
+h3 {
+    font-size: 1.8em;
+}
+.text-link {
+    text-decoration: none;
+    color:cornflowerblue
+}
+.text-link:hover {
+    color:rgb(108, 146, 180);
+}
+.text-link:visited {
+    color:cornflowerblue
+}
 .commissions {
     padding-top: 2.5%;
     padding-bottom: 5%;
@@ -250,7 +263,7 @@ h2 {
 .commission-information {
     text-align: left;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.8em;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -259,7 +272,42 @@ h2 {
 }
 .commission-information li {
     margin-bottom: 30px;
-
+}
+.prices-span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 3000;
+}
+h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.4em;
+    font-weight: 3000;   
+}
+.reference-span {
+    display: flex;
+    flex-direction: row;
+}
+.prices {
+    width: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.reference-list {
+    width: 50%;
+}
+.good-pic {
+    width: 50%;
+}
+figcaption {
+    font-size: 0.75em;
 }
 .contact {
     padding-top: 2.5%;
@@ -269,22 +317,22 @@ h2 {
 .contact-contents {
     display: flex;
     flex: row;
-    max-width: 650px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
 }
 .contact-description {
-    max-width: 650px;
+    max-width: 700px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.6em;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
     line-height: 1.6;
 }
 .contact-form {
-    max-width: 650px; 
+    max-width: 700px; 
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -433,8 +481,11 @@ input {
         height: auto;    
         aspect-ratio: 1/1;
     }
-    .commission-information {
+    .prices {
         width: 80%;
+    }
+    .commission-information {
+        width: 95%;
         list-style: none;
     }
     .contact-description {
