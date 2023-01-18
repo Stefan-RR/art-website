@@ -242,6 +242,44 @@ h2 {
     right: 30%;
     height: 90%;
 }
+.testimonials {
+    padding-top: 2.5%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.testimonials-header {
+    font-size: 2.3em;
+    padding-bottom: 5%;
+}
+.testimonial-pic {
+    height: 500px;
+}
+.left {
+    width: 40%;
+    height: 500px;
+}
+.right {
+    width: 500px;
+    margin-left: auto;
+    height: 500px;
+}
+.left-figcaption {
+    font-size: 2em;
+    height: 200px;
+    background-color: rgb(65, 64, 64);
+    color: white;
+    transform: translate(300px, -300px);
+}
+.right-figcaption {
+    font-size: 2em;
+    height: 200px;
+    background-color: rgb(65, 64, 64);
+    color: white;
+    right: 0;
+    transform: translate(-300px, -300px);
+}
 h3 {
     font-size: 1.8em;
 }
@@ -305,7 +343,7 @@ h5 {
     margin-left: auto;
     margin-right: auto;
 }
-figure {
+.ref-fig {
     width: 33%;
 }
 .reference-list {
