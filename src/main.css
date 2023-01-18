@@ -264,7 +264,7 @@ h3 {
     text-align: left;
     font-weight: bold;
     font-size: 1.8em;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     list-style: none;
@@ -320,6 +320,15 @@ figcaption {
     font-size: 0.75em;
     width: 100%;
     margin: auto;
+    background-color: rgb(65, 64, 64);
+    color: white;
+    padding-left: 20px;
+}
+.good-caption {
+    transform: translate(-50px, -40px);
+}
+.bad-caption {
+    transform: translate(50px, -40px);
 }
 .contact {
     padding-top: 2.5%;
@@ -396,6 +405,18 @@ input {
     align-self: center;
     text-align: center;
     padding: 10px 20px 10px;
+}
+@media (max-width: 1400px) {
+    .commission-information {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.8em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        line-height: 1.6;
+    }
 }
 @media (max-width: 768px) {
     .list-item, .list-item-logo {
@@ -497,8 +518,18 @@ input {
         width: 80%;
     }
     .commission-information {
-        width: 95%;
+        width: 90%;
         list-style: none;
+    }
+    .reference-span {
+        display: flex;
+        flex-direction: column;
+    }
+    figure {
+        width: 75%;
+    }
+    .reference-list {
+        width: 90%;
     }
     .contact-description {
         width: 80%;
@@ -509,5 +540,20 @@ input {
     }
     .contact-picture {
         height: 200px;
+    }
+}
+@media (max-width: 450px) {
+    .logo {
+        height: 30%
+    }
+    .commission-information {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.7em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        line-height: 1.6;
     }
 }
