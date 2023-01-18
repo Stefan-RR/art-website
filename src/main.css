@@ -404,6 +404,7 @@ input {
     width: 100px;
     align-self: center;
     text-align: center;
+    text-decoration: none;
     padding: 10px 20px 10px;
 }
 @media (max-width: 1400px) {
