@@ -289,7 +289,12 @@ h5 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.4em;
-    font-weight: 3000;   
+    font-weight: 3000;
+    width:fit-content;
+    background-color: rgb(65, 64, 64);
+    color: white; 
+    padding-left: 10px;
+    padding-right: 200px;
 }
 .reference-span {
     display: flex;
@@ -323,12 +328,7 @@ figcaption {
     background-color: rgb(65, 64, 64);
     color: white;
     padding-left: 20px;
-}
-.good-caption {
     transform: translate(-50px, -40px);
-}
-.bad-caption {
-    transform: translate(50px, -40px);
 }
 .contact {
     padding-top: 2.5%;
