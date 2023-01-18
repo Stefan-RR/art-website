@@ -27,5 +27,12 @@ document.querySelectorAll('.pic').forEach(image => {
 // Hides enlarged image on window click
 document.querySelector('.popup-image').onclick = () => {
     document.querySelector('.popup-image').style.display = 'none';
-
 }
+// Copy email on button click
+var text_copy = document.getElementById("email").innerHTML;
+
+function copy() {
+    navigator.clipboard.writeText(text_copy);
+}
+
+
