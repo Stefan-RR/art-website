@@ -244,41 +244,31 @@ h2 {
 }
 .testimonials {
     padding-top: 2.5%;
-    width: 80%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 .testimonials-header {
-    font-size: 2.3em;
+    font-size: 2.5em;
     padding-bottom: 5%;
 }
 .testimonial-pic {
-    height: 500px;
+    width: 100%;
+    aspect-ratio: 1.7;
 }
 .left {
-    width: 40%;
-    height: 500px;
+    width: 60%;
+    height: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .right {
-    width: 500px;
+    width: 60%;
+    height: 30%;
     margin-left: auto;
-    height: 500px;
-}
-.left-figcaption {
-    font-size: 2em;
-    height: 200px;
-    background-color: rgb(65, 64, 64);
-    color: white;
-    transform: translate(300px, -300px);
-}
-.right-figcaption {
-    font-size: 2em;
-    height: 200px;
-    background-color: rgb(65, 64, 64);
-    color: white;
-    right: 0;
-    transform: translate(-300px, -300px);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 h3 {
     font-size: 1.8em;
@@ -359,7 +349,7 @@ h5 {
     width: 48%;
     margin: auto;
 }
-figcaption {
+.caption {
     font-size: 0.75em;
     width: 100%;
     margin: auto;
@@ -467,6 +457,24 @@ input {
     transition: .3s;
 }
 @media (max-width: 1400px) {
+    .testimonials {
+        padding-top: 2.5%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: 30%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .right {
+        width: 100%;
+        height: 30%;
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
     .commission-information {
         text-align: left;
         font-weight: bold;
@@ -574,6 +582,12 @@ input {
         height: auto;    
         aspect-ratio: 1/1;
     }
+    .testimonials {
+        padding-top: 2.5%;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
     .prices {
         width: 80%;
     }
@@ -584,6 +598,9 @@ input {
     .reference-span {
         display: flex;
         flex-direction: column;
+    }
+    .ref-fig {
+        width: 80%;
     }
     figure {
         width: 75%;
@@ -605,6 +622,12 @@ input {
 @media (max-width: 450px) {
     .logo {
         height: 30%
+    }
+    .testimonials {
+        padding-top: 2.5%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
     }
     .commission-information {
         text-align: left;
