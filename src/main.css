@@ -332,6 +332,22 @@ h5 {
     width: 500px; 
     margin-left: auto;
     margin-right: auto;
+    border-spacing: 0;
+    border-color: black;
+    border-width: 0.5px;
+    border-style: solid;
+    background-color: #f8f8f8;
+    font-size: 0.75em;
+}
+th {
+    border-color: black;
+    border-width: 0.25px;
+    border-style: solid;
+}
+td {
+    border-color: black;
+    border-width: 0.25px;
+    border-style: solid;
 }
 .ref-fig {
     width: 33%;
