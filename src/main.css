@@ -321,6 +321,7 @@ h6 {
 select {
     height: 30px;
     margin-left: 10px;
+    font-family:  sans-serif;
 }
 h4 {
     margin-top: 0;
