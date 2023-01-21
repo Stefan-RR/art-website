@@ -49,20 +49,22 @@ fetch('https://api.exchangerate.host/latest?base=CAD')
         }
     })
 // Convert prices to selected currency
+var fromPair = document.getElementById('selection').value;
  function cc() {
     var toPair = document.getElementById('selection').value;
-    fetch('https://api.exchangerate.host/convert?from=CAD&to=' + toPair)
+    fetch('https://api.exchangerate.host/convert?from=' + fromPair +'&to=' + toPair)
         .then((response) =>
         response.json())
         .then((data) => {
             const rate =  data.info.rate
-            test = document.getElementById('test')
-            var n = parseInt(test.innerText)
-            converted = n * rate
-            console.log(n)
-            console.log(rate)
-            console.log(toPair)
-            test.innerText =  converted
-            })
-        }
+            var price = document.getElementsByClassName('num')
+            var basePrice = document.getElementsByClassName('base-num')
+            for(var i = 0, length = price.length; i < length; i++) {
+                var n = parseInt(price[i].innerText)
+                converted = n * rate
+                price[i].innerText = converted.toFixed(2)
+            }
+            fromPair = toPair
+        })
+    }
 
