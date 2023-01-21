@@ -34,28 +34,34 @@ var text_copy = document.getElementById("email").innerHTML;
 function copy() {
     navigator.clipboard.writeText(text_copy);
 }
-
-fetch('https://api.apilayer.com/fixer/symbols?&apikey=60NPRDrEdXimZw1CuxSwYsJcCrA8UZxd')
+// Fetch currency symbols and insert into select
+fetch('https://api.exchangerate.host/latest?base=CAD')
     .then((response) =>
     response.json())
     .then((data) => {
-
-        const symbols = data.symbols
-        
-
-       
+        const symbols = data.rates
         console.log(Object.keys(symbols))
         for (var key in symbols) {
             if (symbols.hasOwnProperty(key)) {
                 console.log(key); 
                 const selection = document.getElementById("selection").appendChild(document.createElement('option'))
                 selection.innerText = key
-
             }
         }
-        
-        
-         
     })
 
+    var toPair = document.getElementById('selection').innerText
+    console.log(toPair)
+    
 
+    fetch('https://api.exchangerate.host/convert?from=CAD&to=' + toPair)
+        .then((response) =>
+        response.json())
+        .then((data) => {
+           const rate =  data.rate
+           test = document.getElementById('test')
+            converted = test.innerText * rate
+            test.innerText = '$' + converted
+    })
+
+   
