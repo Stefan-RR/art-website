@@ -499,8 +499,7 @@ input {
     .left {
         width: 100%;
         height: 30%;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0;
     }
     .right {
         width: 100%;
@@ -641,8 +640,13 @@ input {
     .reference-list {
         width: 90%;
     }
+    .contact-contents {
+        padding: 0;
+        margin-left: 5%;
+        flex-direction: column;
+    }
     .contact-description {
-        width: 80%;
+        width: 90%;
         font-weight: bold;
         font-size: 20px;
         margin-left: auto;
@@ -650,6 +654,9 @@ input {
     }
     .contact-picture {
         height: 200px;
+    }
+    .email-copy {
+        margin-left: 0;
     }
 }
 @media (max-width: 450px) {
