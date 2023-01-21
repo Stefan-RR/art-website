@@ -40,28 +40,29 @@ fetch('https://api.exchangerate.host/latest?base=CAD')
     response.json())
     .then((data) => {
         const symbols = data.rates
-        console.log(Object.keys(symbols))
         for (var key in symbols) {
             if (symbols.hasOwnProperty(key)) {
-                console.log(key); 
                 const selection = document.getElementById("selection").appendChild(document.createElement('option'))
                 selection.innerText = key
+                selection.value = key
             }
         }
     })
-
-    var toPair = document.getElementById('selection').innerText
-    console.log(toPair)
-    
-
+// Convert prices to selected currency
+ function cc() {
+    var toPair = document.getElementById('selection').value;
     fetch('https://api.exchangerate.host/convert?from=CAD&to=' + toPair)
         .then((response) =>
         response.json())
         .then((data) => {
-           const rate =  data.rate
-           test = document.getElementById('test')
-            converted = test.innerText * rate
-            test.innerText = '$' + converted
-    })
+            const rate =  data.info.rate
+            test = document.getElementById('test')
+            var n = parseInt(test.innerText)
+            converted = n * rate
+            console.log(n)
+            console.log(rate)
+            console.log(toPair)
+            test.innerText =  converted
+            })
+        }
 
-   
