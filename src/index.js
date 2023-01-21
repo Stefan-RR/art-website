@@ -35,4 +35,27 @@ function copy() {
     navigator.clipboard.writeText(text_copy);
 }
 
+fetch('https://api.apilayer.com/fixer/symbols?&apikey=60NPRDrEdXimZw1CuxSwYsJcCrA8UZxd')
+    .then((response) =>
+    response.json())
+    .then((data) => {
+
+        const symbols = data.symbols
+        
+
+       
+        console.log(Object.keys(symbols))
+        for (var key in symbols) {
+            if (symbols.hasOwnProperty(key)) {
+                console.log(key); 
+                const selection = document.getElementById("selection").appendChild(document.createElement('option'))
+                selection.innerText = key
+
+            }
+        }
+        
+        
+         
+    })
+
 
