@@ -6,7 +6,8 @@ html, body {
 }
 body {
     background-color: #f5f2eb;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 .nav-div {
     position: fixed;
@@ -422,7 +423,8 @@ td {
     background-color: #f5f2eb;
     padding: 40px;
     border-radius: 5px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 .insta {
     text-decoration: none;
@@ -441,7 +443,8 @@ td {
 .email-copy {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
     font-size: 20px;
     font-weight: bold;
     border-style: none;
@@ -453,7 +456,8 @@ td {
 .form {
     background-color: #f5f2eb;
     margin-bottom: 15px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
     font-size: 20px;
     font-weight: bold;
     border-style: none;
