@@ -238,10 +238,13 @@ h2 {
     cursor: pointer;
     z-index: 100;
 }
+.img-holder {
+    display: flex;
+    justify-content: center;
+}
 .popup-image img {
     position: absolute;
-    top: 2%;
-    right: 30%;
+    top: 5%;
     height: 90%;
 }
 .testimonials {
@@ -529,6 +532,12 @@ input {
     .list-item, .list-item-logo {
         display: none;
     }
+    .nav-logo {
+        height: 60px;
+    }
+    .nav-div {
+        height: 60
+    }
     .button-box {
         visibility: visible;
         height: auto;
@@ -630,9 +639,18 @@ input {
     .prices {
         width: 80%;
     }
+    h2 {
+        padding-top: 5%;
+    }
+    h3 {
+        font-size: 20px;
+        width: 90%;
+        margin: auto;
+    }
     .commission-information {
         width: 90%;
         list-style: none;
+        font-size: 20px;
     }
     .reference-span {
         display: flex;
@@ -679,7 +697,6 @@ input {
     .commission-information {
         text-align: left;
         font-weight: bold;
-        font-size: 1.7em;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
