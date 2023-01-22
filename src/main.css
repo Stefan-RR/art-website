@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 body {
     background-color: #f5f2eb;
@@ -445,7 +446,6 @@ td {
     font-weight: bold;
     border-style: none;
     padding: 2px 8px 4px;
-    margin-left: 10px;
 }
 .contact-picture {
     height: 250px;
@@ -459,6 +459,9 @@ td {
     border-style: none;
     border-bottom: 1px solid rgb(163, 163, 163);
     padding-left: 3%;
+}
+#email {
+    padding-right: 10px;
 }
 .email-copy:hover {
     background-color: #c5c5c4;
@@ -652,11 +655,11 @@ input {
         margin-left: auto;
         margin-right: auto;
     }
+    .contact-pic-div {
+        margin: auto;
+    }
     .contact-picture {
         height: 200px;
-    }
-    .email-copy {
-        margin-left: 0;
     }
 }
 @media (max-width: 450px) {
