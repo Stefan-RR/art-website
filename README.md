@@ -3,4 +3,4 @@
  
  The website utilizes various functions including currency covnersion via an API and enlarging images on click. 
 
-Try it out here: http://artsbytina.com/
+Try it out here: https://artsbytina.com/
